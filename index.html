@@ -308,13 +308,23 @@
             transform: scale(1);
         }
 
-        .bill-option{
-            display: flex;
-            font-size: smaller;
-            text-align: left;
-            padding: 3px;
+        .bill-option input[type="checkbox"] {
+            margin-right: 10px;
+            width: auto;
+           
         }
 
+        .bill-option{
+           
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .bill-option-txt{
+            margin-left: 8px;
+            padding: 8px;
+            font-weight: lighter;
+        }
         .error-popup {
             position: fixed;
             top: 50%;
@@ -407,7 +417,7 @@
                     <h4>Rechnungsadresse</h4>
                     <label>
                         <div class="bill-option">
-                        <input type="checkbox" id="gleiche-adresse" onclick="copyAddress()"> Gleiche wie Versandadresse
+                        <input type="checkbox" id="gleiche-adresse" onclick="copyAddress()"> <div class="bill-option-txt"> Gleiche wie Versandadresse </div>
                         </div>
                     </label>
                     <label for="rechnung-name">Name:</label>
