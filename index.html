@@ -57,8 +57,8 @@
         .side-menu {
             position: fixed;
             top: 0;
-            left: -200px;
-            width: 200px;
+            left: -300px;
+            width: 300px;
             height: 100%;
             background-color: #ffffff;
             box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
@@ -275,11 +275,6 @@
             100% { transform: rotate(360deg); }
         }
 
-        .bill-option{
-            display: flex;
-            font-size: smaller;
-            )
-
         .checkmark {
             display: flex;
             justify-content: center;
@@ -311,6 +306,13 @@
 
         .checkmark.active svg {
             transform: scale(1);
+        }
+
+        .bill-option{
+            display: flex;
+            font-size: smaller;
+            text-align: left;
+            padding: 3px;
         }
 
         .error-popup {
@@ -363,7 +365,7 @@
         <strong>Pulver Gadget (r/drogen)</strong>
 
         <div class="logo">
-           
+         
             <img class="logoimg" src="image.png" alt="Logo"></div>
     </header>
 
@@ -372,7 +374,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html">Produkt</a></li>
             <li><a href="mailto:redditshopp@gmail.com">Kontakt</a></li>
-        </ul>   
+        </ul>
     </nav>
 
     <div class="container">
@@ -403,8 +405,10 @@
 
                 <section>
                     <h4>Rechnungsadresse</h4>
-                    <label class="bill-option" >
+                    <label>
+                        <div class="bill-option">
                         <input type="checkbox" id="gleiche-adresse" onclick="copyAddress()"> Gleiche wie Versandadresse
+                        </div>
                     </label>
                     <label for="rechnung-name">Name:</label>
                     <input type="text" id="rechnung-name" name="rechnung-name" placeholder="Vor und Nachname...">
